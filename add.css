@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  background-image: url('images/de073d52d138877e1e99ccb7aa909fd8.jpg');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  padding: 40px;
+  color: white;
+}
+
+.text {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text .logo {
+  width: 80px;
+  margin-bottom: 20px;
+  border-radius: 70%;
+  width: 100px;
+  filter: opacity(0.8);
+  height: 150px;
+}
+
+.text h1 {
+  font-size: 32px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.text h1 span {
+  font-weight: bold;
+  color: #274264;
+}
+
+.text p {
+  font-size: 16px;
+  max-width: 400px;
+}
+
+.form-section {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+  color: #1e3a5f;
+  text-align: center;
+  text-decoration: underline;
+}
+
+form input,
+form textarea,
+select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+form textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #1e3a5f;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0099cc;
+}
+
+.back-link.under-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  /* علشان يكون في النص */
+}
+
+.back-link.under-form a {
+  display: inline-block;
+  background-color: #1e3a5f;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-link.under-form a:hover {
+  background-color: #0099cc;
+}
+
+.fade-in {
+  animation: fadeInEffect 0.6s ease-in-out;
+  opacity: 1;
+}
+
+.error {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+@keyframes fadeInEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text,
+  .form-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .text h1 {
+    font-size: 24px;
+  }
+
+  form input,
+  form textarea {
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px;
+  }
+}

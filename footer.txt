@@ -1,0 +1,122 @@
+in hread add -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+html -->
+<footer id="footer">
+  <div class="container">
+    <div class="info">
+
+      <div class="footer-box">
+        <h1>SPIRIT BUILDERS</h1>
+        <p>Subscribe</p>
+        <p>Get 30% off your first order</p>
+      </div>
+
+      <div class="footer-box">
+        <h2>Support</h2>
+        <p>Customer Service</p>
+        <p>SPIRIT_BUILDERS@gmail.com</p>
+        <p>+20 102 314 5627</p>
+      </div>
+
+      <div class="footer-box">
+        <h2>Account</h2>
+        <p>My Account</p>
+        <p>Login / Register</p>
+        <p>Cart</p>
+        <p>Wishlist</p>
+        <p>Shop</p>
+      </div>
+
+      <div class="footer-box">
+        <h2>Quick Links</h2>
+        <p>Privacy Policy</p>
+        <p>Terms Of Use</p>
+        <p>FAQ</p>
+        <p>Contact</p>
+      </div>
+
+      <div class="footer-box social-footer">
+        <h2>Follow Us</h2>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook fa-xl"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin fa-xl"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter fa-xl"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <hr />
+
+    <div class="copyright">
+      <p>Copyright © <strong>SPIRIT BUILDERS</strong> 2025</p>
+    </div>
+  </div>
+</footer>
+
+
+css --> 
+#footer {
+  background-color: #fff9e6;
+  padding: 10px 10px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-box {
+  flex: 1 1 180px;
+  min-width: 150px;
+}
+
+.footer-box h1, .footer-box h2 {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.footer-box p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.social-footer a {
+  margin-right: 12px;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.social-footer a:hover {
+  transform: scale(1.2);
+  color: #0077b5;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 30px auto;
+  width: 90%;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #444;
+}

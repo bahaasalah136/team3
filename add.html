@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Property</title>
+  <link rel="stylesheet" href="add.css">
+</head>
+
+<body class="fade-in">
+
+
+  <div class="background"></div>
+
+  <div class="container">
+    <div class="text">
+      <img src="images/logo2.png" alt="Logo" class="logo">
+      <h1>We can help you <span>Sell</span>, <span>Rent</span> or <span>Buy</span> your property</h1>
+      <p>Take the next step with us to help you effortlessly sell, rent or buy your property.</p>
+    </div>
+
+    <div class="form-section">
+      <h2>Add New Property</h2>
+      <form id="propertyForm">
+        <select id="title">
+          <option value="">Select property type</option>
+          <option value="House">House</option>
+          <option value="Apartment">Apartment</option>
+          <option value="Villa">Villa</option>
+          <option value="Land">Land</option>
+        </select>
+        <small class="error"></small>
+
+        <input type="text" id="location" placeholder="Location" name="location">
+        <small class="error"></small>
+
+        <input type="number" id="type" placeholder="Area" name="Area">
+        <small class="error"></small>
+
+        <input type="number" id="price" placeholder="Price" name="price">
+        <small class="error"></small>
+
+        <textarea id="description" placeholder="Description" name="description"></textarea>
+        <small class="error"></small>
+
+        <input type="text" id="image" placeholder="Image URL" name="image">
+        <small class="error"></small>
+
+        <button type="button" id="btn" onclick="savproperti()">Publish Property</button>
+        <div class="back-link under-form">
+          <a href="home.html">← Back to Home</a>  
+           <!-- //هغير ال index عل حسب اسم الهوم  //       -->
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+  </div>
+
+
+  <script src="add.js"></script>
+</body>
+
+</html>
